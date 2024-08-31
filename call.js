@@ -82,7 +82,7 @@ const sendTransaction = async (choice) => {
 
         const balance = ethers.utils.formatEther(await provider.getBalance(wallet.address));
 
-        console.log(`${transactionCount}. Sukses\nBalance\t\t: ${balance} ETH\nBlock Number\t: ${txReceipt.blockNumber}\nTx hash\t\t: ${txResponse.hash}`);
+        console.log(`\n${transactionCount}. Sukses\nBalance\t\t: ${balance} ETH\nBlock Number\t: ${txReceipt.blockNumber}\nTx hash\t\t: ${txResponse.hash}`);
         
         transactionCount++; // Increment the transaction count
 
