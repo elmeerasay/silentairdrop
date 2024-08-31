@@ -11,7 +11,7 @@ npm init -y
 ```
 
 ```bash
-npm install dotenv ethers
+npm install dotenv ethers@5
 ```
 
 ```bash
