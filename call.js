@@ -96,7 +96,7 @@ const sendTransaction = async () => {
             currentChoice = await findNetworkWithSufficientBalance(balances);
             if (!currentChoice) {
                 console.log('Saldomu abis!!!');
-                return;
+                process.exit(0);
             }
         }
 
@@ -179,7 +179,8 @@ const main = async () => {
                 await sleep(3000); // Tunggu 3 detik
             }
         } else {
-            console.log('Pilihan tidak valid. Silakan pilih 1 ,2 , 3 , 4');
+            console.log('Pilihan tidak valid.');
+            process.exit(0);
         }
     }
 };
