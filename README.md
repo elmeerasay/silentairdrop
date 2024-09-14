@@ -29,3 +29,11 @@ Save lalu jalankan node
 ```bash
 node call.js
 ```
+
+atau
+
+
+```bash
+node onlyblastandarb.js
+```
+
